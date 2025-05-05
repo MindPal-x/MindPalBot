@@ -1,36 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mindpal</title>
-    <!-- You can add more metadata or links to stylesheets here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindpal</title>
 </head>
 <body>
-    <h1>Mindpal AI Assistant</h1>
-    <p>How can i help you today</p>
+  <h1>Mindpal AI Assistant</h1>
+  <p>How can I help you today?</p>
 
-    <!-- Chatfuel Widget Script will go below this body tag -->
-
-    <!-- Chatfuel widget script -->
-<script type="text/javascript" src="https://widget.chatfuel.com/widget.js" async defer></script>
-<script>
-  window.ChatfuelWidget = {
-    token: "6817bf5bfdee49d2c7923cec",  <!-- This is your bot's token -->
-    host: "https://widget.chatfuel.com",
-    params: {},
-  };
-
-  (function() {
-    var script = document.createElement('script');
-    script.dataset.bot = "6817bf5bfdee49d2c7923cec";  <!-- This is your bot's token -->
-    script.dataset.zindex = "99999";
-    script.src = "https://panel.chatfuel.com/widgets/chat-widget/chat-widget.js";
-    script.async = true;
-    script.defer = true;
-    document.getElementsByTagName('head')[0].appendChild(script);
-  })();
-</script>
-
+  <!-- Chatfuel widget script -->
+  <script>
+    (function() {
+      var script = document.createElement('script');
+      script.dataset.bot = "6817bf5bfdee49d2c7923cec";
+      script.dataset.zindex = "99999";
+      script.src = "https://panel.chatfuel.com/widgets/chat-widget/chat-widget.js";
+      script.async = true;
+      script.defer = true;
+      document.getElementsByTagName('head')[0].appendChild(script);
+    })();
+  </script>
 </body>
 </html>
