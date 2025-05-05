@@ -8,16 +8,20 @@
 </head>
 <body>
     <h1>Welcome to Mindpal</h1>
-    <p>Type your message</p>
+    <p>Type your message below:</p>
 
-    <!-- Chatfuel Widget Script will go below this body tag -->
+    <!-- Chatfuel Widget -->
+    <div id="chatfuel-widget"></div> <!-- Chatfuel's container div -->
+
     <!-- Chatfuel widget script -->
     <script type="text/javascript" src="https://widget.chatfuel.com/widget.js" async defer></script>
     <script>
         window.ChatfuelWidget = {
-            token: "6817bf5bfdee49d2c7923cec",  // Your unique token from Chatfuel
+            token: "6817bf5bfdee49d2c7923cec", // Your unique token from Chatfuel
             host: "https://widget.chatfuel.com",
             params: {},
+            // Specify a container for the chat widget to appear
+            container: document.getElementById("chatfuel-widget")
         };
     </script>
 </body>
